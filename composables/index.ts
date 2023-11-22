@@ -4,7 +4,7 @@
 
 const greeting = "hello";
 console.log(greeting);
-const a = "ゆい";
+const a : string = "ゆい";
 console.log(a);
 console.log(greeting + a);
 //consoleの使い方
@@ -57,6 +57,24 @@ console.log(age);
 
 //▶︎▶︎11/21勉強内容
 //今日はなかなか眠くて集中できない。お腹が空いて力が出ない状況。
+
+//▶︎▶︎11/22勉強内容
+//ファイルをブラウザで実行するにはlaunch.jsonが必要
+/*
+■launch.json
+vscodeでデバック実行するのに必要なファイル
+
+■Chromに飛ばすとき
+プロキシの設定もしくはファイヤーウォールの設定が必要
+
+ちょっと適当にやりすぎたので、もう一度いちからデバック実行できる環境を整える
+参照▶︎https://qiita.com/shitikakei/items/9714968bd4a5a53cba3c
+できれば明日中にvscodeもエクリプスも環境構築し直したい。丁寧に、ごまかさず。
+
+
+
+*/
+
 
 
 
