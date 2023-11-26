@@ -93,12 +93,9 @@ typescriptはJavascriptの機能+静的型付け
 静的型付け・・・変数や関数の型が実行前に決定される　ex)Java, C#, typescript,
 動的型付け・・・実行時に決定される　ex)Python, Javascript, Ruby
 
-
-
-
 */
 
-//refオブジェクト
+//refオブジェクト　vueの設定が必要？
 
 //uhyo.tsからのimport
 //import宣言をする時は、拡張子は.jsをつける。じゃないとコンパイルが通らない。
@@ -116,4 +113,54 @@ typescriptでvueが使えるようになる。
 
 */
 
+//オブジェクトの型宣言
+//インターフェースを使用
 
+interface Car {
+    name: string
+    distance: number
+    color: string
+}
+
+const fireCar : Car = {
+    name: "消防車",
+    distance: 200000,
+    color: "赤"
+}
+
+console.log("車の名前は" + fireCar.name + "です");
+console.log("色は" + fireCar.color + "です。");
+
+//型エイリアスを使用
+type Person = {
+    id: number
+    name: string
+    age: number
+    job: string
+    marriage: boolean
+
+}
+
+const person1 : Person = {
+    id: 1,
+    name: "西園寺麗子",
+    age: 21,
+    job: "CA",
+    marriage: false
+}
+
+const person2 : Person = {
+    id: 2,
+    name: "山本隆",
+    age: 54,
+    job: "陶芸家",
+    marriage: true
+}
+
+//いくつかデータを作って、結婚していない人のデータだけを若い順に出力。
+/*
+@param id
+@return 取得結果（リストで受け取る）
+
+取得条件　marriageがfalse
+*/
