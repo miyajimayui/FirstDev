@@ -4,7 +4,6 @@ console.log(r);
 /*
 typescriptの実行の流れ
 JavaScriptにコンパイル→Node.jsでJavaScriptを実行
-
 */
 
 const v: string = "hello";
@@ -157,6 +156,57 @@ const person2 : Person = {
     marriage: true
 }
 
+
+const person3 : Person = {
+    id: 3,
+    name: "山本悠里",
+    age: 34,
+    job: "ピアノの先生",
+    marriage: true
+}
+
+
+const person4 : Person = {
+    id: 4,
+    name: "山本彩",
+    age: 3,
+    job: "陶芸家",
+    marriage: false
+}
+
+
+const person5 : Person = {
+    id: 5,
+    name: "山本哲士",
+    age: 54,
+    job: "体育教師",
+    marriage: false
+}
+
+
+const person6 : Person = {
+    id: 6,
+    name: "山本・ジャック・モンロー",
+    age: 27,
+    job: "音楽家",
+    marriage: false
+}
+
+//各Person情報をリストにまとめる。
+//現時点では空リスト
+const people : Array<Person> = [];
+
+//リストに追加していく。
+people.push(person1);
+people.push(person2);
+people.push(person3);
+people.push(person4);
+people.push(person5);
+people.push(person6);
+
+//リストの要素数
+console.log("peopleリストの要素数は" + people.length);
+
 //いくつかデータを作って、結婚していない人のデータだけを若い順に出力。
 /*
 @param id
@@ -164,3 +214,29 @@ const person2 : Person = {
 
 取得条件　marriageがfalse
 */
+
+export function nonMarriage(id : Person): Array<Person> {
+    //引数で指定したidのPersonの情報をpeopleリストの中から取得
+    people.forEach(p => {
+        if(p.marriage = false) {
+            //別のリストを新規作成
+            const nonMarriagePeople = new Array<Person>;
+            nonMarriagePeople.push(p);
+        }
+        return no
+    })
+
+
+
+    /*
+
+   
+    */
+    
+
+
+
+    
+
+
+}
