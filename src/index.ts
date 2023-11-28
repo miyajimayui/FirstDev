@@ -215,20 +215,28 @@ console.log("peopleリストの要素数は" + people.length);
 取得条件　marriageがfalse
 */
 
-export function nonMarriage(id : Person): Array<Person> {
+export function nonMarriage(id : number) {
+    const nonMarriagePeople = new Array<Person>;
     //引数で指定したidのPersonの情報をpeopleリストの中から取得
     people.forEach(p => {
         if(p.marriage = false) {
             //別のリストを新規作成
-            const nonMarriagePeople = new Array<Person>;
+            
             nonMarriagePeople.push(p);
         }
-        return no
+       
     })
 
+    //メソッドの呼び出し
+    console.log(nonMarriage(5));
 
 
     /*
+
+    今日の目標
+    リストのメソッドを完成させる。
+    awaitが実際どんな感じで動いているのかを確認できる何かの作成。
+
 
    
     */
