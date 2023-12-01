@@ -152,6 +152,8 @@ export function nonMarriage(id : number) {
 }
     //メソッドの呼び出し
     console.log("未婚者は" + nonMarriage(5));
+
+    
     
 
 
