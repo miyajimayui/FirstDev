@@ -106,6 +106,7 @@ listのメソッドの使い方 foreach/oush
 githubのリポジトリを整理
 githubのパッケージについて勉強
 ママに電話する
+ヒャぁ
 
 
 
